@@ -6,7 +6,7 @@ let io: Server;
 export const initSocket = (server: HttpServer) => {
   io = new Server(server, {
     cors: {
-      origin: ["http://localhost:3000"],
+      origin: ["http://localhost:3000", "https://vedaai-assignment-agent.vercel.app"],
       methods: ["GET", "POST"]
     }
   });

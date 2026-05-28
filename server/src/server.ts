@@ -12,7 +12,7 @@ import cors from 'cors'
 const app = express();
 const httpServer = createServer(app);
 const corsOptions = {
-  origin: ['http://localhost:3000'],
+  origin: ['http://localhost:3000', 'https://vedaai-assignment-agent.vercel.app'],
   credentials: true
 }
 app.use(cors(corsOptions))
